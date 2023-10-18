@@ -1,5 +1,6 @@
 #include <iostream>
 using namespace std;
+int globalVar=20;
 void myFunction(){
     //Function code block
     int localVar =20;
@@ -9,8 +10,11 @@ void myFunction(){
 
 int main ()
 {
+    
     // Invoking /calling the function my function()
     myFunction();
+    //cout<<localVar ;This is not expected to work because 
+    cout<<"Global variable value "<<globalVar ;//This is expected to work because 
 
     return 0;
 }
